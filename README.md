@@ -1,6 +1,10 @@
-# Challenge-1 
+## Challenge-1 : Code Refractor
 
-#  This is my home work for the first week - due date 4/24/2022
-Code refractor for Horiseons Social Solutions
-file:///Users/brikenaprendaj/code-work/week1-homework/index.html
-f
+# Description
+This project was assigned with a start code. The goal is improve the existing code so that the website is an accessible and functional website with the code given. Adjustments were made to both the HTML files and the CSS.
+
+# Link: Here is a link to the deployment applicaition
+https://bprendaj.github.io/Challenge-1/
+
+# Screenshot 
+I have included screenshots of the adjusted website. The user can see increased functionality with clickable links and form fitting boxes.
