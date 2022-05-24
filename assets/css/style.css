@@ -8,16 +8,40 @@
     --content-blue:#0072bb;
 }
 
+/* SECTORS*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+    color: var(--white);
+}
+
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* body */
 body {
     background-color: var(--gray);
 }
 
+/* header */
 .header {
     padding: 20px;
     font-family: var(--large-font);
@@ -25,6 +49,7 @@ body {
     color:var(--white);
 }
 
+/* header title */
 .header h1 {
     display: inline-block;
     font-size: 48px;
@@ -34,8 +59,8 @@ body {
     color: var(--gray);
 }
 
-.header div {
-    position: absolute;
+/* nav */
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -43,57 +68,23 @@ body {
     font-size:  20px;
 }
 
-nav{
-    position: relative;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:right;
-    left:10px;
-    margin-top: -25px;
-    z-index: 1;
-}
-nav a {
-    color: var(--white);
-    text-decoration: none;
-    padding: 0px 25px;
+header nav ul li{
+    display: inline-block;
+    margin-left: 25px;
 }
 
-p {
-    font-size: 16px;
-    color: var(--white);
-}
-
-header{
-    font-family: var(--large-font);
-    display: flex;
-    justify-content:left;
-    font-size: 36px;
-    margin-top: -15px;
-    z-index: -1;
-}
-
+/* hero */
 .hero {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size:cover;
-    background-position:left;
+    background-position:center;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-    width: 250px;
-    height: 175px;
-}
 
-.float-right {
-    float: right;
-    margin-left: 25px;
-    width: 250px;
-    height: 175px;
-}
+/* horizontal box */
 
 .content {
     width: 75%;
@@ -101,9 +92,18 @@ header{
     margin-left: 20px;
 }
 
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.social-media-marketing img,.online-reputation-management img,.search-engine-optimization img {
+    max-height:200px;
+}
+
+/* RIGHT BOX */
+
 .benefits{
-    display: flex;
-    flex-direction: column;
     margin-right: 20px;
     clear: both;
     float: right;
@@ -112,17 +112,16 @@ header{
     max-height:100%;
     font-family:var(--large-font);
     background-color: var(--sidebar-blue);
-    white-space:pre-wrap;
-    text-overflow: ellipsis;
+    color: #ffffff;
 }
 
+/* Lead generation, benefit brand and cost management */
 .benefit-lead,.benefit-brand,.benefit-cost {
-    display: block;
-    text-align: center;
     margin-bottom: 32px;
-    color: var(--white);
-    max-width: fit-content;
 }
+
+/* brand awareness */
+
 .benefit-lead h3,.benefit-brand h3,.benefit-cost h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -131,8 +130,7 @@ header{
 .benefit-lead img,.benefit-brand img,.benefit-cost img{
     display: block;
     margin: 10px auto;
-    height: 100px;
-    width: 100px;
+    max-width: 150px;
 }
 .search-engine-optimization,.online-reputation-management,.social-media-marketing{
     margin-bottom: 20px;
@@ -142,9 +140,8 @@ header{
     background-color: var(--content-blue);
     color:var(--white);
 }
-.social-media-marketing img,.online-reputation-management img,.search-engine-optimization img {
-    max-height:200px;
-}
+
+/* CREATING THE FOOTER */
 
 .footer {
     padding: 30px;
